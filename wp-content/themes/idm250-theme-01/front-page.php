@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<h1>Page Page </h1>
-
 <?php
 
 if (have_posts()) {

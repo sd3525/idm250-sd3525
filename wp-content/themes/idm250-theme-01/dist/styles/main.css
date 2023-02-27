@@ -1,3 +1,77 @@
 * {
-  color: hotpink;
+  color: rgb(0, 0, 0);
+}
+
+.menu {
+  font-family: "Gloock", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 20px 40px;
+  display: inline;
+  float: right;
+  padding-right: 10px;
+}
+
+h1 {
+  font-family: "Gloock", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 20px 40px;
+  display: inline;
+  float: left;
+  padding-left: 10px;
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 20px;
+  margin-left: 40%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.foot-menu {
+  font-family: "Gloock", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  bottom: 35px;
+}
+
+.menu-item-29,
+.menu-item-34,
+.menu-item-35,
+.menu-item-36 {
+  margin: 0 20px 0 20px;
+}
+
+.compass {
+  width: 50px;
+  height: 50px;
 }
