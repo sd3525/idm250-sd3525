@@ -1,4 +1,3 @@
-<?php wp_footer(); ?>
 
 <footer>
     <nav class="foot-menu">
@@ -10,5 +9,6 @@
         <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
     </div>
 </footer>
+<?php wp_footer(); ?>
 </body>
 </html>

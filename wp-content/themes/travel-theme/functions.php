@@ -10,7 +10,9 @@
  * will add all of our scripts and styles.
  * @return void
  */
-function theme_scripts_and_styles()
+
+
+ function theme_scripts_and_styles()
 {
     // Load CSS Reset
     wp_enqueue_style(
@@ -110,5 +112,42 @@ function register_my_menu() {
   }
   add_action( 'init', 'register_my_menus' );
 
-wp_nav_menu( array( 'theme_location' => 'header-menu' ) );
 
+
+function register_theme_sidebars()
+
+{
+    register_sidebar([
+        'name' => 'Page Sidebar',
+        'id' => 'page-sidebar',
+    ]);
+}
+
+add_action('widgets_init', 'register_theme_sidebars');
+
+function my_acf_json_save_point($path)
+{
+    // update path
+    $path = get_stylesheet_directory() . '/my-custom-folder';
+
+    // return
+    return $path;
+}
+add_filter('acf/settings/save_json', 'my_acf_json_save_point');
+
+
+function my_acf_json_load_point( $paths ) {
+    
+    // remove original path (optional)
+    unset($paths[0]);
+    
+    
+    // append path
+    $paths[] = get_stylesheet_directory() . '/my-custom-folder';
+    
+    
+    // return
+    return $paths;
+    
+}
+add_filter('acf/settings/load_json', 'my_acf_json_load_point');

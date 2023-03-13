@@ -1,24 +1,59 @@
 * {
+  box-sizing: border-box;
+}
+
+html {
   color: rgb(0, 0, 0);
 }
 
-.menu {
-  font-family: "Gloock", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  margin: 20px 40px;
-  display: inline;
-  float: right;
-  padding-right: 10px;
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-h1 {
+.title {
+  font-family: "Gloock", sans-serif;
+  font-weight: 500;
+  font-size: 34px;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+  margin-left: 50px;
+}
+
+.menu div {
   font-family: "Gloock", sans-serif;
   font-weight: 500;
   font-size: 24px;
   margin: 20px 40px;
-  display: inline;
-  float: left;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: space-between; */
+  color: rgb(0, 0, 0);
+}
+
+.menu li a {
+  font-family: "Gloock", sans-serif;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.content-blocks h1 {
+  font-family: "Gloock", sans-serif;
+  font-weight: 500;
+  font-size: 76px;
+  margin: 20px 40px;
   padding-left: 10px;
 }
 
@@ -26,47 +61,37 @@ h1 {
   font-family: "Gloock", sans-serif;
   font-weight: 500;
   font-size: 40px;
-  display: inline;
-  float: left;
-  padding-top: 150px;
-  margin-left: -145px;
+  padding-top: 50px;
+  padding-left: 205px;
 }
 
 .content-blocks h3 {
   font-family: "Gloock", sans-serif;
   font-weight: 500;
   font-size: 32px;
-  display: inline;
-  float: left;
   padding-top: 50px;
-  margin-left: 205px;
+  padding-left: 205px;
 }
 
 .content-blocks h4 {
   font-family: "Gloock", sans-serif;
   font-weight: 500;
   font-size: 28px;
-  display: inline;
-  float: left;
   padding-top: 50px;
-  margin-left: 205px;
+  padding-left: 205px;
 }
 
 .content-blocks h5 {
   font-family: "Gloock", sans-serif, 300;
-  font-size: 28px;
-  padding-top: 110px;
-  display: inline;
-  float: left;
+  font-size: 58px;
 }
 
 .content-blocks h6 {
   font-family: "Gloock", sans-serif;
   font-weight: 500;
   font-size: 24px;
-  float: left;
-  padding-top: 130px;
-  margin-left: -70px;
+  padding-top: 30px;
+  padding-left: 200px;
 }
 
 .ul {
@@ -82,11 +107,10 @@ h1 {
   list-style-type: disc;
   display: flex;
   flex-direction: column;
-  float: left;
 }
 
 li {
-  float: left;
+  margin-left: 0;
 }
 
 li a {
@@ -102,15 +126,13 @@ ol {
   list-style-type: decimal-leading-zero;
   display: flex;
   flex-direction: column;
-  float: left;
+  margin-left: 0;
 }
 
 footer {
   display: flex;
+  width: 100%;
   flex-direction: column;
-  position: absolute;
-  bottom: -170px;
-  margin-left: 40%;
 }
 
 .center {
@@ -150,7 +172,61 @@ p.has-small-font-size {
   margin-top: 40px;
   padding-right: 400px;
   padding-bottom: 20px;
-  display: inline;
-  float: left;
   padding-left: 10px;
+}
+
+.wp-block-image img {
+  width: 700px;
+  height: 500px;
+  margin-left: 300px;
+  margin-top: 50px;
+}
+
+/* page.php */
+
+.wp-block-media-text__media {
+  width: 320px;
+  height: 320px;
+}
+
+.wp-block-media-text.alignwide.is-stacked-on-mobile {
+  margin-left: 205px;
+  padding-top: 50px;
+}
+
+.wp-block-media-text__content {
+  margin-left: 20px;
+  margin-right: 300px;
+  line-height: 37px;
+}
+
+.wp-block-image img {
+  width: 600px;
+  height: 500px;
+  margin-left: 400px;
+  margin-top: 50px;
+}
+
+p.has-text-align-center {
+  font-family: "Gloock", sans-serif, 300px;
+  font-size: 30px;
+  margin-top: 40px;
+}
+
+figcaption.wp-element-caption {
+  font-family: "Gloock", sans-serif, 300px;
+  text-align: center;
+}
+
+/* 404 */
+
+.error {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+p.error4 {
+  font-family: "Gloock", sans-serif, 300px;
+  font-size: 30px;
+  padding-bottom: 50px;
 }

@@ -8,14 +8,14 @@
 
 <?php 
 
-$currentPostId = get_the_id();
+// $currentPostId = get_the_id();
 
-$terms = get_the_terms($currentPostId, 'category');
+// $terms = get_the_terms($currentPostId, 'category');
 
-foreach ($terms as $term) {
+// foreach ($terms as $term) {
 
-    echo $term->name;
-}
+//     echo $term->name;
+// }
 
 ?>
 
