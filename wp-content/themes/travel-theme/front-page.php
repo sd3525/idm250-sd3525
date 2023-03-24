@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+<div class="front-page">
+</div>
+
 <?php
 
 if (have_posts()) {
@@ -17,9 +20,10 @@ while (have_posts()) {
     echo 'no posts found';
 }
 
+
+
 ?>
 
-<?php get_template_part('components/content'); ?>
 
 <?php get_footer(); ?>
 

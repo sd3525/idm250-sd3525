@@ -1,5 +1,6 @@
-<?php get_header(); ?>  
+<?php get_header(); ?>
+<h1><?php echo get_the_title(); ?></h1>
 
-   <h1>Hello this is html</h1>
+<?php get_template_part('components/content');?>
 
- <?php get_footer(); ?> 
+<?php get_footer(); ?>

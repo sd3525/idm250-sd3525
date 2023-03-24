@@ -26,7 +26,9 @@
         'google-fonts',
         // 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap',
 
-      'https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,700;1,9..144,800&family=Gloock&display=swap',
+      '<link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">',
         [],
         null
     );

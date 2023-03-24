@@ -6,7 +6,7 @@
         ?>
     </nav>
     <div class="center">
-        <p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
+        <p class="year">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?></p>
     </div>
 </footer>
 <?php wp_footer(); ?>
